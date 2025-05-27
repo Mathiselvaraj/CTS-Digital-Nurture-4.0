@@ -1,0 +1,193 @@
+/* ======================
+   1. Reset and Base Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======================
+   2. Body and Typography
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fafafa;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+/* ======================
+   3. Headers and Banners
+========================= */
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+section h2 {
+  background: linear-gradient(to right, #0066ff, #00ccff);
+  color: white;
+  padding: 10px;
+}
+
+#mainHeader {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+/* ======================
+   4. Links and Navigation
+========================= */
+a:link {
+  color: #0066cc;
+}
+a:hover {
+  color: #ff6600;
+}
+a:active {
+  color: red;
+}
+a:visited {
+  color: #660066;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* ======================
+   5. Buttons
+========================= */
+/* Style for main CTA button */
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ======================
+   6. Event Cards
+========================= */
+.eventCard {
+  border: 2px solid #0066cc;
+  padding: 15px;
+  margin: 20px;
+  background-color: #fff;
+  width: 90%;
+}
+
+/* ======================
+   7. Text and Descriptions
+========================= */
+.description {
+  text-align: justify;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+h3, p {
+  font-family: 'Arial', sans-serif;
+  color: #444;
+}
+
+/* ======================
+   8. Lists
+========================= */
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 20px;
+}
+
+/* ======================
+   9. Tables
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* ======================
+   10. Forms and Input
+========================= */
+input:focus {
+  outline: 2px solid #ff6600;
+}
+
+/* ======================
+   11. Visibility & Display
+========================= */
+.hide-visibility {
+  visibility: hidden;
+}
+
+.hide-display {
+  display: none;
+}
+
+/* ======================
+   12. Multi-column News Section
+========================= */
+.news-article {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+  padding: 15px;
+}
+
+/* ======================
+   13. Responsive Layout
+========================= */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.eventCard {
+  width: 100%;
+}
+
+body {
+  font-size: 14px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
